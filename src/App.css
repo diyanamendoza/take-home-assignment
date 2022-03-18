@@ -19,11 +19,11 @@ form {
 }
 
 .form-control__radio > label {
-	margin-left: 4px;
+  margin-left: 4px;
 }
 
 .form-control__text > textarea {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -41,4 +41,8 @@ form {
 
 .u-mt-3 {
   margin-top: 3rem;
+}
+
+button {
+  cursor: pointer;
 }
