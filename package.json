@@ -1,5 +1,11 @@
 {
   "name": "take-home-assignment",
+  "jest": {
+    "testMatch": [
+      "<rootDir>/src/**/*.test.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
+    ]
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll --testMatch **/src/**/*.test.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -33,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
   }
 }
